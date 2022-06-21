@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.container-fluid{
+    height: 45px;
+    text-align: center;
+}
+
+#nav-item-dropdown{
+    align-items: center;
+    padding: 0;
+}
+.container{
+    width: 98%;
+    max-width: 950px;
+
+}
+.bd-placeholder-img card-img-top img{
+    width: 250px;
+    height: 225px;
+}
+
+marquee{
+    margin: 0;
+    padding: 8px;
+}
+
+body{
+    background-image: url('https://images.unsplash.com/photo-1601379329542-31c59347e2b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+} 
+
+
+.main{
+    background-image: url('https://images.unsplash.com/photo-1601379329542-31c59347e2b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:top;
+    
+    
+} 
+ 
+.cardshadow-sm{
+    background-image: url('https://images.unsplash.com/photo-1610571273412-f43a878c1550?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjEwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60');
+    background-size: cover;
+    
+} 
+
+/* 
+ footer {
+      background-color: black;
+      color: white;
+    }
+
+.footer {
+      height: 45px;
+      font-size: x-large;
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+    }  */
