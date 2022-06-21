@@ -63,4 +63,11 @@ public class BankController {
 			return "newUser";
 	}
 
+	
+	
+	@GetMapping(path="setpassword.view")
+	public String setPasswordView()
+	{
+		return "setpassword";
+	}
 }
