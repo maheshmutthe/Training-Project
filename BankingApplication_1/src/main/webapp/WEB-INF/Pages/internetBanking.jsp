@@ -1,27 +1,20 @@
-<%@ page isELIgnored="false"%>
-<%@ taglib prefix='c' uri='http://java.sun.com/jsp/jstl/core'%>
-<!doctype html>
-<html lang="en">
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Bootstrap CSS -->
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
-
-<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" href="css/style.css">
+<title>Internet Banking</title>
 </head>
-
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
 		<div class="container-fluid">
 			<h1 class="navbar-brand" href="#">Bank of Morningstar</h1>
@@ -119,92 +112,51 @@
 				class="visually-hidden">Next</span>
 		</button>
 	</div>
-	<div class="main">
-
-
-
-		<marquee width="100%" direction="left">
-			<a href="" class="btn btn-secondary" role="button">Open Bank
-				Account in just few minutes </a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-			&nbsp; <a href="addUser.view" class="btn btn-success" role="button">Get
-				Credit & Debit Cards instantly </a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-			&nbsp; <a href="" class="btn btn-danger" role="button"> Get
-				Housing Loans at very low interest</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-			&nbsp; <a href="" class="btn btn-info" role="button">Open zero
-				deposit bank Account in just few minutes</a>&nbsp; &nbsp; &nbsp; &nbsp;
-			&nbsp; &nbsp; <a href="" class="btn btn-dark" role="button">Just
-				download Bank of Morningstar App and get many services in just on
-				few clicks </a>&nbsp; &nbsp; &nbsp;
-
-		</marquee>
-
-		<c:if test="${msg=='added' }">
-			<div id=addmsg class="bg-success text-white container">
-				<h2 class="text-center">Account is created Successfully.</h2>
-			</div>
-		</c:if>
-
-		<%-- <c:if test="${user!=null }">
-			<div id=addmsg class="bg-success text-white container">
-				<h2 class="text-center">${user}</h2>
-			</div>
-		</c:if> --%>
-
-		<script type="text/javascript">
-			setTimeout("doSomething()", 10000);
-			function doSomething() {
-				document.getElementById('addmsg').innerHTML = '';
-			}
-		</script>
-		<div class="text-center pt-1 mb-3 pb-1">
-			<a href="getLoginPage">
-				<button
-					class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
-					type="button">Log In</button>
-			</a>
-
+	
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="display-4">Morningstar Bank</h1>
+			<p class="lead">Here you can apply for internet banking.</p>
 		</div>
-		<div class="text-center pt-1 mb-3 pb-1">
-			<a href="ShowPageForInternetBanking">
-				<button
-					class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
-					type="button">New User ? Register Now</button>
-			</a>
-		</div>
-		<div class="text-center pt-1 mb-3 pb-1">
-			<a href="addUser.view">
-				<button
-					class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
-					type="button">Create New Bank Account Online</button>
-			</a>
-
-
-			<!-- <a href="addUser.view">Account create</a> -->
-
-		</div>
-
-		<div>
-			<footer class="py-1 my-2 bg-dark navbar-dark">
-
-				<p class="text-center text-muted">&copy; Bank of Morningstar Pvt
-					Ltd 2022. All Rights Reserved</p>
-			</footer>
-		</div>
-
-
-		<!-- Optional JavaScript; choose one of the two! -->
-
-		<!-- Option 1: Bootstrap Bundle with Popper -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-			crossorigin="anonymous"></script>
-
-		<!-- Option 2: Separate Popper and Bootstrap JS -->
-		<!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+		<div class="card">
+		
+				<h2 style="color:red">Registration Form for Online Banking</h2>
+		<form action="internetbankingRegistration.do" method="post">
+			
+			<div class="form-group">
+                       Enter Login Password:<input type="text" name="loginPassword">      
+             </div>
+		             <div class="form-group">
+		                   Enter Transaction Password:<input type="text" name="transactionPassword">          
+		             </div>
+		           
+		             <div class="form-group">
+		               Secret Question:
+		                    <select name="secretQuestion" class="form-select form-select-lg mb-3"
+						aria-label=".form-select-lg example">
+						<option  selected>secret question</option>
+						<option value="What is Your Favourite pet?">What is Your Favourite pet?</option>
+						<option value="What is your Favourite place">What is your Favourite place?</option>
+						<option value="What is your Favourite food">What is your Favourite food?</option>
+					</select>          
+		             </div>
+		             <div class="form-group">
+		                     Answer:<input type="text" name="secretAnswer"> <br>         
+		             </div>
+		             <div class="form-group">
+		                      Transaction Email :<input type="text" name="transactionEmail"><br>        
+		             </div>
+		             <div class="form-group">
+		                        Account No:<input type="text" name="accountNo"><br>      
+		             </div>
+		            
+					
+					<div>
+						<button type="submit" class="btn btn-primary">Register</button>
+					</div>
+		</form>
+	</div>
+	</div>
 </body>
-
 </html>
+

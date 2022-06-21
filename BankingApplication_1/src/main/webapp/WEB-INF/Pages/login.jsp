@@ -1,119 +1,156 @@
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
+
+<meta charset="ISO-8859-1">
 <link rel="stylesheet" href="css/style.css">
-
-<style>
-body  {
-
-	height:1024px;
-	width:1024px;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode:screen;
-    color:#009999;
-    background-image:url(C:\Users\abhijana\Desktop\java\OnlineBankingProject\img1.jpg);
-   
-}
-</style>
-
+<title>LogIn</title>
 </head>
-<body >
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body>
 
-        <div class="container-fluid">
-            <h1 class="navbar-brand" href="#">Bank of Morningstar </h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    
-               
-            </div>
-        </div>
-    </nav>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-<center>
-<h1> Welcome User </h1>
-</center>
-<br>
-<br>
-<form action="checkLogin.obj">
-<h4 align="center"><font color="red">${error}</font></h4>
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 col-md-offset-7">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <span class="glyphicon glyphicon-lock"></span>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Bank Application Login</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form">
-                    <div class="form-group">
-				
-                <div class=class="col-md-3">
-        			<label for="validate-text">User Id: *</label>
-					<div class="input-group">
-					    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-						<input type="text" class="form-control" name="adminId" id="adminId" placeholder="@User Login" required>
-					</div>
-				</div>
-				
-				<div class=class="col-md-3">
-        			<label for="validate-number">Password</label>
-					<div class="input-group">
-					
-						<span class="input-group-addon danger"><span class="glyphicon glyphicon-eye-close"></span></span>
-						<input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
-						
-					</div>
-				</div>
-				<br>
-                    <div class="form-group last">
-                        <div class="col-sm-offset-3 col-sm-9">
-                            <button type="submit" class="btn btn-success btn-sm">
-                                Login </button>
-                                 <button type="reset" class="btn btn-default btn-sm">
-                                Reset</button>
-                        </div>
-                    </div>
-                <br>
-                <br>
-                <hr>    
-                </div>
-                <div class="panel-footer">
-                    Not A User? <a href="">Forgot Password</a></div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-</form>
-
-<div>
-			<footer class="py-1 my-2 bg-dark navbar-dark">
-
-				<p class="text-center text-muted">&copy; Bank of Morningstar Pvt
-					Ltd 2022. All Rights Reserved</p>
-			</footer>
+		<div class="container-fluid">
+			<h1 class="navbar-brand" href="#">Bank of Morningstar</h1>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			</div>
 		</div>
+	</nav>
+
+
+	<div id="carouselExampleCaptions" class="carousel slide"
+		data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide-to="0" class="active" aria-current="true"
+				aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img
+					src="https://source.unsplash.com/1200x200/?HD Bank images,HD Credit Card images"
+					class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h1>Welcome to Bank of Morningstar</h1>
+					<p>Your Needs...Our Services</p>
+					<a href="Credit.view">
+						<button type="button" class="btn btn-danger">Credit</button>
+					</a> <a href="Debit.view">
+						<button type="button" class="btn btn-primary">Debit</button>
+					</a> <a href="addBene.view">
+						<button type="button" class="btn btn-success">Transfer</button>
+					</a>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img
+					src="https://source.unsplash.com/1200x200/?HD Debit Card images,HD Money images"
+					class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h1>Welcome to Bank of Morningstar</h1>
+					<p>Your Needs...Our Services</p>
+					<a href="Credit.view">
+						<button type="button" class="btn btn-danger">Credit</button>
+					</a> <a href="Debit.view">
+						<button type="button" class="btn btn-primary">Debit</button>
+					</a> <a href="addBene.view">
+						<button type="button" class="btn btn-success">Transfer</button>
+					</a>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img
+					src="https://source.unsplash.com/1200x200/?HD online Bank application images,HD Bank images"
+					class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h1>Welcome to Bank of Morningstar</h1>
+					<p>Your Needs...Our Services</p>
+					<a href="Credit.view">
+						<button type="button" class="btn btn-danger">Credit</button>
+					</a> <a href="Debit.view">
+						<button type="button" class="btn btn-primary">Debit</button>
+					</a> <a href="addBene.view">
+						<button type="button" class="btn btn-success">Transfer</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button"
+			data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+				class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button"
+			data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span> <span
+				class="visually-hidden">Next</span>
+		</button>
+	</div>
+
+	<div class="container">
+		<div class="row justify-content-center align-items-center"
+			style="height: 100vh">
+			<div class="col-6">
+				<div class="card">
+					<div class="card-body">
+						<form action="login" method="post">
+							<h3>Login Page</h3>
+							<div class="form-group">
+								Enter Email:<input type="text" class="form-control" name="email">
+							</div>
+							<div class="form-group">
+								Enter Password <input type="password" class="form-control"
+									name="password">
+							</div>
+							<div class="col-md-6 offset-md-4 mt-3">
+								<button type="submit" id="sendlogin" class="btn btn-primary text-center">login</button>
+							</div>
+						</form>
+						</br>
+						<div class="col-md-5 offset-md-3 text-center">
+							<a href="addUser.view">First Time User? Register</a>
+						</div>
+						</br>
+						<div class="col-md-5 offset-md-3 text-center">
+							<a href="">Forget User ID?</a>
+						</div>
+						</br>
+						<div class="col-md-5 offset-md-3 text-center">
+							<a href="setpassword.view">Forget Password?</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<footer class="py-1 my-2 bg-dark navbar-dark">
+
+			<p class="text-center text-muted">&copy; Bank of Morningstar Pvt
+				Ltd 2022. All Rights Reserved</p>
+		</footer>
+	</div>
 
 </body>
 </html>
-				
-				
-
-
-
-
