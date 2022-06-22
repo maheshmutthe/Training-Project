@@ -116,5 +116,87 @@ public class BankServiceImpl implements BankService{
 		// TODO Auto-generated method stub
 		return dao.addDebit(accountDetails);
 	}
+	@Override
+	public InternetBanking getUserDetails(String email) {
+		return dao.getUserDetails(email);
+	}
+	@Override
+	public AccountMaster getUser(long accountNo) {
+		return dao.getUser(accountNo);
+	}
+	@Override
+	public boolean checkLogin(String adminId, String password) {
+		
+		return dao.checkLogin(adminId,password);
+	}
+	@Override
+	public AccountDetails getAccountDetails(long accountNo) {
+		
+		return dao.getAccountDetails(accountNo);
+	}
+	
+	
+
+	@Override
+	public int forgotUsername(int accountNumber, String secretQuestion, String secretAnswer) {
+		try {
+			InternetBanking ib=dao.forgotUsername(accountNumber);
+			if(ib.getSecretQuestion()==secretQuestion && ib.getSecretAnswer()==secretAnswer)
+			{
+				return ib.getInternetBankingId();
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return 0;
+		
+	}
+	@Override
+	public int forgotPassword(int internetBankingId, String secretQuestion, String secretAnswer) {
+		try {
+			InternetBanking ib=dao.forgotPassword(internetBankingId);
+			if(ib.getSecretQuestion()==secretQuestion && ib.getSecretAnswer()==secretAnswer)
+			{
+				return 1;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return 0;
+	}
+	@Override
+	public int setNewPassword(int internetBankingId, String loginPassword, String confirmLoginPassword) {
+		if(loginPassword==confirmLoginPassword)
+		{
+			int result;
+			try {
+				result = dao.setNewPassword(internetBankingId, loginPassword);
+				return result;
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		return 0;
+	}
+	
+
+	@Override
+	public int impsTransaction(AccountDetails accountDetails, BeneficiaryDetails beneficiaryDetails) {
+		// TODO Auto-generated method stub
+		return dao.impsTransaction(accountDetails, beneficiaryDetails);
+	}
+
+	@Override
+	public int impsTransaction1(AccountDetails accountDetails, BeneficiaryDetails beneficiaryDetails) {
+		// TODO Auto-generated method stub
+		return dao.impsTransaction1(accountDetails, beneficiaryDetails);
+
+		
+	}
+
 
 }

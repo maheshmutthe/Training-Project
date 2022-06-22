@@ -60,7 +60,7 @@
 				<div class="carousel-caption d-none d-md-block">
 					<h1>Welcome to Bank of Morningstar</h1>
 					<p>Your Needs...Our Services</p>
-					<a href="Credit.view">
+					<!-- <a href="Credit.view">
 					<button  type="button" class="btn btn-danger">Credit</button>
 					</a>
 					<a href="Debit.view">
@@ -68,7 +68,7 @@
 					</a>
 					<a href="addBene.view">
 					<button  type="button" class="btn btn-success">Transfer</button>
-					</a>
+					</a> -->
 				</div>
 			</div>
 			<div class="carousel-item">
@@ -78,7 +78,7 @@
 				<div class="carousel-caption d-none d-md-block">
 					<h1>Welcome to Bank of Morningstar</h1>
 					<p>Your Needs...Our Services</p>
-					<a href="Credit.view">
+					<!-- <a href="Credit.view">
 					<button  type="button" class="btn btn-danger">Credit</button>
 					</a>
 					<a href="Debit.view">
@@ -86,7 +86,7 @@
 					</a>
 					<a href="addBene.view">
 					<button  type="button" class="btn btn-success">Transfer</button>
-					</a>
+					</a> -->
 				</div>
 			</div>
 			<div class="carousel-item">
@@ -96,7 +96,7 @@
 				<div class="carousel-caption d-none d-md-block">
 					<h1>Welcome to Bank of Morningstar</h1>
 					<p>Your Needs...Our Services</p>
-					<a href="Credit.view">
+					<!-- <a href="Credit.view">
 					<button  type="button" class="btn btn-danger">Credit</button>
 					</a>
 					<a href="Debit.view">
@@ -104,7 +104,7 @@
 					</a>
 					<a href="addBene.view">
 					<button  type="button" class="btn btn-success">Transfer</button>
-					</a>
+					</a> -->
 				</div>
 			</div>
 		</div>

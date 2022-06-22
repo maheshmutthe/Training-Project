@@ -3,6 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -12,7 +13,6 @@
 <title>Internet Banking</title>
 </head>
 <body>
-
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
@@ -53,7 +53,7 @@
 				<div class="carousel-caption d-none d-md-block">
 					<h1>Welcome to Bank of Morningstar</h1>
 					<p>Your Needs...Our Services</p>
-					<a href="Credit.view">
+					<!-- <a href="Credit.view">
 					<button  type="button" class="btn btn-danger">Credit</button>
 					</a>
 					<a href="Debit.view">
@@ -61,7 +61,7 @@
 					</a>
 					<a href="addBene.view">
 					<button  type="button" class="btn btn-success">Transfer</button>
-					</a>
+					</a> -->
 				</div>
 			</div>
 			<div class="carousel-item">
@@ -71,7 +71,7 @@
 				<div class="carousel-caption d-none d-md-block">
 					<h1>Welcome to Bank of Morningstar</h1>
 					<p>Your Needs...Our Services</p>
-					<a href="Credit.view">
+					<!-- <a href="Credit.view">
 					<button  type="button" class="btn btn-danger">Credit</button>
 					</a>
 					<a href="Debit.view">
@@ -79,7 +79,7 @@
 					</a>
 					<a href="addBene.view">
 					<button  type="button" class="btn btn-success">Transfer</button>
-					</a>
+					</a> -->
 				</div>
 			</div>
 			<div class="carousel-item">
@@ -89,7 +89,7 @@
 				<div class="carousel-caption d-none d-md-block">
 					<h1>Welcome to Bank of Morningstar</h1>
 					<p>Your Needs...Our Services</p>
-					<a href="Credit.view">
+					<!-- <a href="Credit.view">
 					<button  type="button" class="btn btn-danger">Credit</button>
 					</a>
 					<a href="Debit.view">
@@ -97,7 +97,7 @@
 					</a>
 					<a href="addBene.view">
 					<button  type="button" class="btn btn-success">Transfer</button>
-					</a>
+					</a> -->
 				</div>
 			</div>
 		</div>
@@ -112,25 +112,26 @@
 				class="visually-hidden">Next</span>
 		</button>
 	</div>
-	
+
+
 	<div class="container">
-		<div class="jumbotron">
+		<!-- <div class="jumbotron">
 			<h1 class="display-4">Morningstar Bank</h1>
 			<p class="lead">Here you can apply for internet banking.</p>
-		</div>
-		<div class="card">
+		</div> -->
+		<div class="container">
 		
 				<h2 style="color:red">Registration Form for Online Banking</h2>
 		<form action="internetbankingRegistration.do" method="post">
 			
-			<div class="form-group">
+			<div class="form-group col-md-6">
                        Enter Login Password:<input type="text" name="loginPassword">      
              </div>
-		             <div class="form-group">
+		             <div class="form-group col-md-6">
 		                   Enter Transaction Password:<input type="text" name="transactionPassword">          
 		             </div>
 		           
-		             <div class="form-group">
+		             <div class="form-group col-md-6">
 		               Secret Question:
 		                    <select name="secretQuestion" class="form-select form-select-lg mb-3"
 						aria-label=".form-select-lg example">
@@ -140,13 +141,13 @@
 						<option value="What is your Favourite food">What is your Favourite food?</option>
 					</select>          
 		             </div>
-		             <div class="form-group">
+		             <div class="form-group col-md-6">
 		                     Answer:<input type="text" name="secretAnswer"> <br>         
 		             </div>
-		             <div class="form-group">
+		             <div class="form-group col-md-6">
 		                      Transaction Email :<input type="text" name="transactionEmail"><br>        
 		             </div>
-		             <div class="form-group">
+		             <div class="form-group col-md-6">
 		                        Account No:<input type="text" name="accountNo"><br>      
 		             </div>
 		            

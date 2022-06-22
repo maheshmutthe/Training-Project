@@ -43,13 +43,12 @@
 				<h2 class="text-center">You have been logged out!!</h2>
 			</div>
 			
-			<h3>Session Expired</h3>
 			
 			<div class="text-center pt-1 mb-3 pb-1">
-			<a href="/">
+			<a href="getLoginPage">
 				<button
 					class="btn btn-danger btn-block fa-lg gradient-custom-2 mb-3"
-					type="button">Home</button>
+					type="button">Go to Login</button>
 			</a>
 		    </div>
 

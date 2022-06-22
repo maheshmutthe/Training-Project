@@ -27,5 +27,24 @@ public interface BankDao {
 
 	public int addDebit(AccountDetails accountDetails);
 
+	public InternetBanking getUserDetails(String email);
+
+	public AccountMaster getUser(long accountNo);
+
+	public boolean checkLogin(String adminId, String password);
+
+	public AccountDetails getAccountDetails(long accountNo);
+
+
+	public InternetBanking forgotUsername(int accountNumber)throws SQLException;
+	public InternetBanking forgotPassword(int internetBankingId)throws SQLException;
+	public int setNewPassword(int internetBankingId,String loginPassword)throws SQLException;
+	
+	public int impsTransaction(AccountDetails accountDetails, BeneficiaryDetails beneficiaryDetails);
+
+
+	public int impsTransaction1(AccountDetails accountDetails, BeneficiaryDetails beneficiaryDetails);
+
+
 
 }

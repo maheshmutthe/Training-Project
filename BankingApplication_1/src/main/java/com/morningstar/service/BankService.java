@@ -24,4 +24,23 @@ public interface BankService {
 	public int addCredit(AccountDetails accountDetails);
 
 	public int addDebit(AccountDetails accountDetails);
+
+	public InternetBanking getUserDetails(String email);
+
+	public AccountMaster getUser(long accountNo);
+
+	public boolean checkLogin(String adminId, String password);
+
+	public AccountDetails getAccountDetails(long accountNo);
+	
+
+	public int forgotUsername(int accountNumber,String secretQuestion,String secretAnswer);
+	public int forgotPassword(int internetBankingId,String secretQuestion,String secretAnswer);
+	public int setNewPassword(int internetBankingId,String loginPassword,String confirmLoginPassword);
+	
+	public int impsTransaction(AccountDetails accountDetails, BeneficiaryDetails beneficiaryDetails);
+
+
+	public int impsTransaction1(AccountDetails accountDetails, BeneficiaryDetails beneficiaryDetails);
+
 }

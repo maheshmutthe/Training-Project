@@ -126,17 +126,21 @@
 								<button type="submit" id="sendlogin" class="btn btn-primary text-center">login</button>
 							</div>
 						</form>
+						<div class="col-md-5 offset-md-3 text-center">
+							<a href="adminlogin.view">Go to Admin Login</a>
+						</div>
+						
 						</br>
 						<div class="col-md-5 offset-md-3 text-center">
 							<a href="addUser.view">First Time User? Register</a>
 						</div>
 						</br>
 						<div class="col-md-5 offset-md-3 text-center">
-							<a href="">Forget User ID?</a>
+							<a href="forgotUserId.view">Forget User ID?</a>
 						</div>
 						</br>
 						<div class="col-md-5 offset-md-3 text-center">
-							<a href="setpassword.view">Forget Password?</a>
+							<a href="forgotPassword.view">Forget Password?</a>
 						</div>
 					</div>
 				</div>

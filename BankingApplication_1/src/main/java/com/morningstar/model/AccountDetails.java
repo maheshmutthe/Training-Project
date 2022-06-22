@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class AccountDetails {
 	private double balance;
-	private Date openingDate;
+	private String openingDate;
 	private long accountNumber;
 	
 	private AccountMaster accountmaster;
@@ -22,7 +22,7 @@ public class AccountDetails {
 		
 	}
 	
-	public AccountDetails(double balance, Date openingDate, long accountNumber) {
+	public AccountDetails(double balance, String openingDate, long accountNumber) {
 		super();
 		this.balance = balance;
 		this.openingDate = openingDate;
@@ -34,10 +34,10 @@ public class AccountDetails {
 	public void setBalance(double balance) {
 		this.balance = balance;
 	}
-	public Date getOpeningDate() {
+	public String getOpeningDate() {
 		return openingDate;
 	}
-	public void setOpeningDate(Date openingDate) {
+	public void setOpeningDate(String openingDate) {
 		this.openingDate = openingDate;
 	}
 	public long getAccountNumber() {
@@ -51,6 +51,7 @@ public class AccountDetails {
 		return "Account_Details [balance=" + balance + ", openingDate=" + openingDate + ", accountNumber="
 				+ accountNumber + "]";
 	}
+
 	
 	
 	
