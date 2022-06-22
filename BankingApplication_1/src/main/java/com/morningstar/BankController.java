@@ -147,6 +147,7 @@ public class BankController {
 		if(res>=1)
 		{
 			model.addAttribute("updpass","password updated Succesfully..");
+			session.invalidate();
 			return "index";
 		}
 		else
